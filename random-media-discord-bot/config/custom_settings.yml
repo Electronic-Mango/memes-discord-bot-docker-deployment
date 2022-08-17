@@ -3,23 +3,23 @@ bot:
   token:
   commands:
     media_group:
-      name: "meme"
+      name: meme
       commands:
         get:
-          description: "Get a random meme"
+          description: Get a random meme
     text_group:
-      name: "copypasta"
+      name: copypasta
       commands:
         get:
-          description: "Get a random copypasta"
+          description: Get a random copypasta
         deep_fry_text:
-          description: "Get a random deep-fried copypasta"
+          description: Get a random deep-fried copypasta
       language_subgroup:
         commands:
           set:
-            description: "Set language for copypastas"
-            autocomplete_hint: "Output language for copypastas"
+            description: Set language for copypastas
+            autocomplete_hint: Output language for copypastas
           reset:
-            description: "Reset language for copypastas"
+            description: Reset language for copypastas
 sources:
   file: /config/custom_sources.yml
