@@ -1,0 +1,42 @@
+version: "3.9"
+
+x-service-defaults: &service-defaults
+  restart: unless-stopped
+
+x-volume-timezone: &volume-timezone
+  /etc/timezone:/etc/timezone:ro
+
+x-volume-localtime: &volume-localtime
+  /etc/localtime:/etc/localtime:ro
+
+services:
+  discord-bot:
+    << : *service-defaults
+    image: random-media-discord-bot:latest
+    build: ./random-media-discord-bot/source-code/
+    container_name: memes-discord-bot-discord-bot
+    volumes:
+      - ./random-media-discord-bot/config:/config
+      - *volume-timezone
+      - *volume-localtime
+    environment:
+      - CUSTOM_SETTINGS_PATH=/config/custom_settings.yml
+
+  reddit-api-api:
+    << : *service-defaults
+    image: reddit-api-api:latest
+    build: ./reddit-api-api/source-code/
+    container_name: memes-discord-bot-reddit-api-api
+    volumes:
+      - ./reddit-api-api/config:/config
+      - *volume-timezone
+      - *volume-localtime
+    ports:
+      - 5011:8080
+    environment:
+      - CUSTOM_SETTINGS_PATH=/config/custom_settings.yml
+
+networks:
+  default:
+    name: memes-discord-bot-network
+    driver: bridge
