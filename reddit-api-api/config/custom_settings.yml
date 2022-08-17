@@ -1,0 +1,6 @@
+reddit:
+  client:
+    # Your Reddit app ID
+    id:
+    # Your Reddit app secret
+    secret:
