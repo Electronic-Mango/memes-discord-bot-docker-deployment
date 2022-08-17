@@ -2,3 +2,7 @@
 	path = reddit-api-api/source-code
 	url = https://github.com/Electronic-Mango/reddit-api-api.git
 	branch = main
+[submodule "random-media-discord-bot/source-code"]
+	path = random-media-discord-bot/source-code
+	url = https://github.com/Electronic-Mango/random-media-discord-bot.git
+	branch = main
