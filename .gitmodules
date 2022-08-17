@@ -1,0 +1,4 @@
+[submodule "reddit-api-api/source-code"]
+	path = reddit-api-api/source-code
+	url = https://github.com/Electronic-Mango/reddit-api-api.git
+	branch = main
