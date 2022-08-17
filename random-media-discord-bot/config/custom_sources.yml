@@ -1,0 +1,18 @@
+media:
+  - url: http://localhost:3001/subreddit/media/random/2meirl4meirl/20
+    keys: [media_url]
+  - url: http://localhost:3001/subreddit/media/random/whenthe/20
+    keys: [media_url]
+  - url: http://localhost:3001/subreddit/media/random/surrealmemes/20
+    keys: [media_url]
+  - url: http://localhost:3001/subreddit/media/random/deepfriedsurrealmemes/20
+    keys: [media_url]
+  - url: http://localhost:3001/subreddit/media/random/moistmemes/20
+    keys: [media_url]
+  - url: http://localhost:3001/subreddit/media/random/dankvideos/20
+    keys: [media_url]
+
+text:
+  - url: http://localhost:3001/subreddit/text/random/copypasta/20
+    keys: [selftext]
+    language: en
