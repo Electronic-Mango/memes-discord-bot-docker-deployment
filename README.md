@@ -89,3 +89,20 @@ You can change subreddits by supplying new entries, or modifying existing ones, 
 More detailed description of API endpoints is available in [Reddit API API project page](https://github.com/Electronic-Mango/reddit-api-api).
 
 More detailed description of settings YAML and sources YAML is available in [Random media Discord bot](https://github.com/Electronic-Mango/random-media-discord-bot) project and its default YAML files.
+
+
+
+## Run the bot
+
+You can run the bot in just a few steps:
+
+ 1. Clone this repository
+ 1. Update submodules with `git submodule update --init`
+ 1. Fill Reddit app ID and secret in `./reddit-api-api/config/custom_settings.yml`
+ 1. Fill Discord bot token in `./random-media-discord-bot/config/custom_settings.yml`
+ 1. Run `docker compose up -d --build`
+
+If you want to restart the containers without rebuilding the images you can skip `--build` flag.
+
+Configuration files for both submodules are stored in the container as mounted volumes.
+Changes to them will be applied after containers restart, you don't need to rebuild Docker images.
