@@ -6,6 +6,16 @@ Both Reddit API API and Random media Discord bot are stored in this repository a
 
 
 
+## Table of contents
+
+- [Updates to source code of submodules](#updates-to-source-code-of-submodules)
+- [Configuration](#configuration)
+  - [Reddit API API](#reddit-api-api)
+  - [Random media Discord bot](#random-media-discord-bot)
+- [Run the bot](#run-the-bot)
+
+
+
 ## Updates to source code of submodules
 
 [Reddit API API](https://github.com/Electronic-Mango/reddit-api-api) and [Random media Discord bot](https://github.com/Electronic-Mango/random-media-discord-bot) bot are stored in this repository as git submodules.
