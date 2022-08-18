@@ -2,6 +2,30 @@
 
 This repository provides an example of how you can combine my two other projects - [Random media Discord bot](https://github.com/Electronic-Mango/random-media-discord-bot) and [Reddit API API](https://github.com/Electronic-Mango/reddit-api-api) - into a **Memes Discord bot** via [Docker Compose](https://docs.docker.com/compose/).
 
+Both Reddit API API and Random media Discord bot are stored in this repo as git submodules.
+
+
+
+## Updates to source code of submodules
+
+After cloning this repository you have to update submodules to their correct versions.
+Otherwise you won't be able to build their Docker images.
+You can update the submodules via:
+
+```bash
+git submodule update --init
+```
+
+After future update to submodules you have to update them after rebasing this repository via:
+
+```bash
+git submodule update
+```
+
+When Docker Compose is run with `--build` flag a new Docker images will be built, using Dockerfile in submodules, so it is important that they are up to date.
+
+This and submodules repositories on GitHub use workflows to ensure, that source code here is always up to date.
+
 
 
 ## Configuration
