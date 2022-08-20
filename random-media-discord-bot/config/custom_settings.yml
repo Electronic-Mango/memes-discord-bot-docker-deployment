@@ -21,5 +21,11 @@ bot:
             autocomplete_hint: Output language for copypastas
           reset:
             description: Reset language for copypastas
+
 sources:
+  # Sources are stored in a mounted volume, not the container itself
   file: /config/custom_sources.yml
+
+db:
+  # Languages DB is stored in a mounted volume, not the container itself
+  path: /config/languages.db
