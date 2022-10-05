@@ -27,5 +27,5 @@ sources:
   file: /config/custom_sources.yml
 
 db:
-  # Languages DB is stored in a mounted volume, not the container itself
-  path: /config/languages.db
+  # Discord channel data DB is stored in a mounted volume, not the container itself
+  path: /config/channel_data.db
