@@ -7,6 +7,12 @@ bot:
       commands:
         get:
           description: Get a random meme
+        periodic:
+          enable:
+            description: Send periodic memes
+            autocomplete_hint: How often memes should be sent in minutes
+          disable:
+            description: Stop periodic memes
     text_group:
       name: copypasta
       commands:
