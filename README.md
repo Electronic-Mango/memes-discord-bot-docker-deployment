@@ -92,7 +92,7 @@ bot:
 
 Other parameters will use their default values stores in `settings.yml` file in Random media Discord bot itself.
 
-Both memes and copypastas are loaded from reddit submissions.
+Both memes and copypastas are loaded from reddit articles.
 You can check `custom_sources.yml` whether it fits your preference for subreddits to read data from.
 
 `media` section defines sources for images loaded via `/meme get` command.
@@ -109,10 +109,10 @@ More detailed description of settings YAML and sources YAML is available in [Ran
 You can run the bot in just a few steps:
 
  1. Clone this repository
- 1. Update submodules with `git submodule update --init`
- 1. Fill Reddit app ID and secret in `./reddit-api-api/config/custom_settings.yml`
- 1. Fill Discord bot token in `./random-media-discord-bot/config/custom_settings.yml`
- 1. Run `docker compose up -d --build`
+ 2. Update submodules with `git submodule update --init`
+ 3. Fill Reddit app ID and secret in `./reddit-api-api/config/custom_settings.yml`
+ 4. Fill Discord bot token in `./random-media-discord-bot/config/custom_settings.yml`
+ 5. Run `docker compose up -d --build`
 
 If you want to restart the containers without rebuilding the images you can skip `--build` flag.
 
