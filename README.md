@@ -1,6 +1,6 @@
 # Memes Discord bot Docker deployment
 
-This repository provides an example of how you can combine my two other projects - [Random media Discord bot](https://github.com/Electronic-Mango/random-media-discord-bot) and [Reddit API API](https://github.com/Electronic-Mango/reddit-api-api) - into a **Memes Discord bot** via [Docker Compose](https://docs.docker.com/compose/).
+This repository provides an example of how you can combine my two other projects - [Random media Discord bot](https://github.com/Electronic-Mango/random-media-discord-bot) and [Reddit API API](https://github.com/Electronic-Mango/reddit-fastapi-api) - into a **Memes Discord bot** via [Docker Compose](https://docs.docker.com/compose/).
 
 Both Reddit API API and Random media Discord bot are stored in this repository as git submodules.
 
@@ -18,7 +18,7 @@ Both Reddit API API and Random media Discord bot are stored in this repository a
 
 ## Updates to source code of submodules
 
-[Reddit API API](https://github.com/Electronic-Mango/reddit-api-api) and [Random media Discord bot](https://github.com/Electronic-Mango/random-media-discord-bot) bot are stored in this repository as git submodules.
+[Reddit API API](https://github.com/Electronic-Mango/reddit-fastapi-api) and [Random media Discord bot](https://github.com/Electronic-Mango/random-media-discord-bot) bot are stored in this repository as git submodules.
 
 After cloning this repository you have to update submodules to their correct versions.
 Otherwise you won't be able to build their Docker images.
@@ -44,12 +44,12 @@ This and submodules repositories on GitHub use workflows to ensure, that source 
 
 ### Reddit API API
 
-[**Reddit API API**](https://github.com/Electronic-Mango/reddit-api-api) configuration is stored in `./reddit-api-api/config/custom_settings.yml` file.
+[**Reddit API API**](https://github.com/Electronic-Mango/reddit-fastapi-api) configuration is stored in `./reddit-fastapi-api/config/custom_settings.yml` file.
 This file isn't loaded into the Docker image, it's stored in Docker container mounted volume as `/config/custom_settings.yml`.
 
 `docker-compose.yml` configures `CUSTOM_SETTINGS_PATH` environment variable to point to correct settings YAML.
 
-In order for the API to work you have to [create a Reddit app](https://old.reddit.com/prefs/apps/) and supply its ID and secret in `./reddit-api-api/config/custom_settings.yml` in this project:
+In order for the API to work you have to [create a Reddit app](https://old.reddit.com/prefs/apps/) and supply its ID and secret in `./reddit-fastapi-api/config/custom_settings.yml` in this project:
 
 ```yaml
 reddit:
@@ -62,9 +62,9 @@ reddit:
 
 Other parameters will use their default values stores in `settings.yml` file in Reddit API API itself.
 
-You can use `./reddit-api-api/config/custom_settings.yml` for additional configuration of Reddit API API, but for this bot only those two parameters are necessary.
+You can use `./reddit-fastapi-api/config/custom_settings.yml` for additional configuration of Reddit API API, but for this bot only those two parameters are necessary.
 
-More detailed description of configuration is available in [**Reddit API API**](https://github.com/Electronic-Mango/reddit-api-api) project and its default settings YAML.
+More detailed description of configuration is available in [**Reddit API API**](https://github.com/Electronic-Mango/reddit-fastapi-api) project and its default settings YAML.
 
 
 ### Random media Discord bot
@@ -98,7 +98,7 @@ You can check `custom_sources.yml` whether it fits your preference for subreddit
 `media` section defines sources for images loaded via `/meme get` command.
 `text` section defines sources for copypastas loaded via `/copypasta get` command.
 You can change subreddits by supplying new entries, or modifying existing ones, and just change subreddit name in the URL.
-More detailed description of API endpoints is available in [Reddit API API project page](https://github.com/Electronic-Mango/reddit-api-api).
+More detailed description of API endpoints is available in [Reddit API API project page](https://github.com/Electronic-Mango/reddit-fastapi-api).
 
 More detailed description of settings YAML and sources YAML is available in [Random media Discord bot](https://github.com/Electronic-Mango/random-media-discord-bot) project and its default YAML files.
 
@@ -110,7 +110,7 @@ You can run the bot in just a few steps:
 
  1. Clone this repository
  2. Update submodules with `git submodule update --init`
- 3. Fill Reddit app ID and secret in `./reddit-api-api/config/custom_settings.yml`
+ 3. Fill Reddit app ID and secret in `./reddit-fastapi-api/config/custom_settings.yml`
  4. Fill Discord bot token in `./random-media-discord-bot/config/custom_settings.yml`
  5. Run `docker compose up -d --build`
 

@@ -26,13 +26,13 @@ services:
     environment:
       - CUSTOM_SETTINGS_PATH=/config/custom_settings.yml
 
-  reddit-api-api:
+  reddit-fastapi-api:
     << : *service-defaults
-    image: reddit-api-api:latest
-    build: ./reddit-api-api/source-code/
-    container_name: memes-discord-bot-reddit-api-api
+    image: reddit-fastapi-api:latest
+    build: ./reddit-fastapi-api/source-code/
+    container_name: memes-discord-bot-reddit-fastapi-api
     volumes:
-      - ./reddit-api-api/config:/config
+      - ./reddit-fastapi-api/config:/config
       - *volume-timezone
       - *volume-localtime
     ports:
