@@ -1,21 +1,21 @@
 media:
-  - url: http://reddit-fastapi-api:8080/subreddit/media/random/whenthe/30/hot
+  - url: http://reddit-fastapi-api:8080/subreddit/random/whenthe?count=30&sort=hot&article_type=media
     keys: [media_url]
     title_keys: [title]
-  - url: http://reddit-fastapi-api:8080/subreddit/media/random/surrealmemes/30/hot
+  - url: http://reddit-fastapi-api:8080/subreddit/random/surrealmemes?count=30&sort=hot&article_type=media
     keys: [media_url]
     title_keys: [title]
-  - url: http://reddit-fastapi-api:8080/subreddit/media/random/Memes_Of_The_Dank/30/hot
+  - url: http://reddit-fastapi-api:8080/subreddit/random/Memes_Of_The_Dank?count=30&sort=hot&article_type=media
     keys: [media_url]
     title_keys: [title]
-  - url: http://reddit-fastapi-api:8080/subreddit/media/random/Polska_wpz/30/hot
+  - url: http://reddit-fastapi-api:8080/subreddit/random/trippinthroughtime?count=30&sort=hot&article_type=media
     keys: [media_url]
     title_keys: [title]
-  - url: http://reddit-fastapi-api:8080/subreddit/media/random/trippinthroughtime/30/hot
+  - url: http://reddit-api-api:8080/subreddit/random/NewVegasMemes?count=30&sort=hot&article_type=media
     keys: [media_url]
     title_keys: [title]
 
 text:
-  - url: http://reddit-fastapi-api:8080/subreddit/text/random/copypasta/30
+  - url: http://reddit-fastapi-api:8080/subreddit/random/copypasta?count=30&article_type=text
     keys: [selftext]
     language: en
