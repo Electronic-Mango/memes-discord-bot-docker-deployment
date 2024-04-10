@@ -36,7 +36,7 @@ services:
       - *volume-timezone
       - *volume-localtime
     ports:
-      - 5011:8080
+      - "5011:8080"
     environment:
       - CUSTOM_SETTINGS_PATH=/config/custom_settings.yml
 
