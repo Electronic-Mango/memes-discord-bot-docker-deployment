@@ -2,3 +2,6 @@
 	path = random-media-discord-bot/source-code
 	url = https://github.com/Electronic-Mango/random-media-discord-bot.git
 	branch = main
+[submodule "reddit-fastapi-api/source-code"]
+	path = reddit-fastapi-api/source-code
+	url = git@github.com:Electronic-Mango/reddit-fastapi-api.git
