@@ -1,21 +1,21 @@
 media:
-  - url: http://reddit-api-api:8080/subreddit/media/random/whenthe/30/hot
+  - url: http://reddit-fastapi-api:8080/subreddit/media/random/whenthe/30/hot
     keys: [media_url]
     title_keys: [title]
-  - url: http://reddit-api-api:8080/subreddit/media/random/surrealmemes/30/hot
+  - url: http://reddit-fastapi-api:8080/subreddit/media/random/surrealmemes/30/hot
     keys: [media_url]
     title_keys: [title]
-  - url: http://reddit-api-api:8080/subreddit/media/random/Memes_Of_The_Dank/30/hot
+  - url: http://reddit-fastapi-api:8080/subreddit/media/random/Memes_Of_The_Dank/30/hot
     keys: [media_url]
     title_keys: [title]
-  - url: http://reddit-api-api:8080/subreddit/media/random/Polska_wpz/30/hot
+  - url: http://reddit-fastapi-api:8080/subreddit/media/random/Polska_wpz/30/hot
     keys: [media_url]
     title_keys: [title]
-  - url: http://reddit-api-api:8080/subreddit/media/random/trippinthroughtime/30/hot
+  - url: http://reddit-fastapi-api:8080/subreddit/media/random/trippinthroughtime/30/hot
     keys: [media_url]
     title_keys: [title]
 
 text:
-  - url: http://reddit-api-api:8080/subreddit/text/random/copypasta/30
+  - url: http://reddit-fastapi-api:8080/subreddit/text/random/copypasta/30
     keys: [selftext]
     language: en
