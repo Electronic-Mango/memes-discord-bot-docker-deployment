@@ -11,7 +11,7 @@ media:
   - url: http://reddit-fastapi-api:8080/subreddit/random/trippinthroughtime?count=30&sort=hot&article_type=media
     keys: [media_url]
     title_keys: [title]
-  - url: http://reddit-api-api:8080/subreddit/random/NewVegasMemes?count=30&sort=hot&article_type=media
+  - url: http://reddit-fastapi-api:8080/subreddit/random/NewVegasMemes?count=30&sort=hot&article_type=media
     keys: [media_url]
     title_keys: [title]
 
